@@ -1,5 +1,5 @@
 package com.briup.apps.sms;
 
-public class zhangchaocontroller {
+public class zhangchaoconteoller {
 
 }
