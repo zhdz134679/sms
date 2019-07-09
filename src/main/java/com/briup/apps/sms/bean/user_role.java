@@ -1,6 +1,5 @@
 package com.briup.apps.sms.bean;
-/***
- * user_role***/
+
 
 public class user_role {
 	private Long id;
