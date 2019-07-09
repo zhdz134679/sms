@@ -1,13 +1,13 @@
 package com.briup.apps.sms.bean;
 
 public class User {
-	private Long id;
-	private String realname;
-	private String telephone;
-	private String password;
-	private String student_no;
-	private String gender;
-	private Long clazz_id;
+	private Long id;                  //用户ID
+	private String realname;          //用户名
+	private String telephone;         //用户电话
+	private String password;          //用户密码
+	private String student_no;        //学号或教师号
+	private String gender;            //性别
+	private Long clazz_id;            //班级代号
 	public Long getId() {
 		return id;
 	}
