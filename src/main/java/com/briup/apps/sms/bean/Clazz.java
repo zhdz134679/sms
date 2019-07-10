@@ -2,11 +2,11 @@ package com.briup.apps.sms.bean;
 /*2019/7/9下午17：04
  * 
  */
-public class clazz {
-private long id;
+public class Clazz {
+private Long id;
 private String name;
 private String begin_time;
-public long getId() {
+public Long getId() {
 	return id;
 }
 public void setId(long id) {
