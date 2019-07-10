@@ -20,6 +20,7 @@ public class UserController {
 	// http://localhost:8080/school/selectAll
 	@GetMapping("selectAll")
 	public List<User> selectAll(){
+		
 		return userService.selectAll();
 	}
 	
