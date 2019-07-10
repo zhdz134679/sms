@@ -1,5 +1,5 @@
 package com.briup.apps.sms.bean;
-/*2019/7/9下午17：04
+/*2019/7/9下午17点04
  * 
  */
 public class Clazz {
