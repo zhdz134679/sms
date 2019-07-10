@@ -1,12 +1,12 @@
 package com.briup.apps.sms.bean;
 
 public class StudentCourse {
-	private long id;
+	private Long id;
 	private long user_id;
 	private long course_id;
 	private String xk_time;
 	private String grade;
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 	public void setId(long id) {
