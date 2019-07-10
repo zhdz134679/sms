@@ -8,6 +8,6 @@
 ">
 <mapper namespace="com.briup.apps.sms.dao.StudentCourseDao">
   <select id="selectAll" resultType="com.briup.apps.sms.bean.StudentCourse">
-    select * from Blog where id = #{id}
+    select * from sms_student_course
   </select>
 </mapper>
