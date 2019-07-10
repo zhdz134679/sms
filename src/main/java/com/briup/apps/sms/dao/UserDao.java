@@ -11,6 +11,6 @@ public interface UserDao {
 	void insert(User user1);//插入
 	
 	void update(User user1); //更新
-	
+	//
 	
 }
