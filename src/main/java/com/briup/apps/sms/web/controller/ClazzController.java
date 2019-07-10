@@ -22,5 +22,4 @@ public class ClazzController {
 		return ClazzService.selectAll();
 	}
 	
-//
 }
