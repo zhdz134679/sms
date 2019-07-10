@@ -11,4 +11,3 @@
     select * from Blog where id = #{id}
   </select>
 </mapper>
-//
