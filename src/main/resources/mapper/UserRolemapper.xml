@@ -6,9 +6,8 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd 
 
 ">
-<mapper namespace="com.briup.apps.sms.dao.SchoolDao">
-  <select id="selectAll" resultType="com.briup.apps.sms.bean.School">
+<mapper namespace="com.briup.apps.sms.dao.UserRoleDao">
+  <select id="selectAll" resultType="com.briup.apps.sms.bean.UserRole">
     select * from Blog where id = #{id}
   </select>
 </mapper>
-//
