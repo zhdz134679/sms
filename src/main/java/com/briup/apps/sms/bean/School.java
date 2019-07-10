@@ -1,5 +1,6 @@
 package com.briup.apps.sms.bean;
-
+/***学校信息
+ * ***/
 public class School {
 	private Long id;
 	private String name;
@@ -36,5 +37,4 @@ public class School {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
 }
