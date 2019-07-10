@@ -3,14 +3,14 @@ package com.briup.apps.sms.bean;
  * 学院信息
  */
 public class College {
-	private long id;
+	private Long id;
 	private String name;
 	private String description;
-	private long school_id;
-	public long getId() {
+	private Long school_id;
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -25,10 +25,10 @@ public class College {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public long getSchool_id() {
+	public Long getSchool_id() {
 		return school_id;
 	}
-	public void setSchool_id(long school_id) {
+	public void setSchool_id(Long school_id) {
 		this.school_id = school_id;
 	}
 
