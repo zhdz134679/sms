@@ -22,9 +22,5 @@ public class SchoolController {
 	public List<School> selectAll(){
 		return schoolService.selectAll();
 	}
-	
-	
-	
-	
-	
+
 }
