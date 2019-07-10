@@ -7,25 +7,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.briup.apps.sms.bean.User;
-import com.briup.apps.sms.service.UserService;
+import com.briup.apps.sms.bean.UserRole;
+import com.briup.apps.sms.service.UserRoleService;
 
 @RestController
-@RequestMapping("/user")
-public class UserController {
-	
-	@Autowired
-	private UserService userService;
+@RequestMapping("/UserRole")
 
-	// http://localhost:8080/school/selectAll
+public class UserRoleController {
+	@Autowired
+	private UserRoleService UserRoleService;
 	@GetMapping("selectAll")
-	public List<User> selectAll(){
+	public List<UserRole> selectAll(){
 		
-		return userService.selectAll();
+		return UserRoleService.selectAll();
 	}
 	
-	
-	
-	
-	
+//
 }
