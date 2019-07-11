@@ -22,7 +22,7 @@ public class CollegeController {
 	public String saveOrUpdate(College college) {
 		try {
 			collegeService.saveOrUpdate(college);
-			return "保存或更新成功";//？？？？
+			return "保存或更新成功";//
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
