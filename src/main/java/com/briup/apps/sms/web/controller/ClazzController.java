@@ -15,6 +15,7 @@ import com.briup.apps.sms.service.ClazzService;
 @RequestMapping("/clazz")
 
 public class ClazzController {
+	
 	@Autowired
 	private ClazzService clazzService;
 	@PostMapping("saveOrUpdate")
