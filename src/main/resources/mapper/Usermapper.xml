@@ -12,7 +12,7 @@
   </select>
   
    <insert id ="insert"> 
- 	insert into sms_user values(null,#{realname},#{telephone},#{password},#{student_no},#{gender},#{clazz_id});
+ 	insert into sms_user values(null,#{realname},#{telephone},#{password},#{student_no},#{gender},#{clazz_id})
  	</insert>
  
  <update id="update">
