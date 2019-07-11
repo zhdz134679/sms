@@ -12,7 +12,7 @@
   </select>
   
    <insert id ="insert"> 
- 	insert into sms_clazz values(null,#{name},#{begin_time},#{college_id});
+ 	insert into sms_clazz values(null,#{name},#{begin_time},#{college_id})
  </insert>
  
  <update id ="update">
