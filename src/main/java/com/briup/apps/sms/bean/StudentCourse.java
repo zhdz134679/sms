@@ -36,6 +36,10 @@ public class StudentCourse {
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
+	public static void deleteById(long id2) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 /**2019/7/9下午16：59
 *.
