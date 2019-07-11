@@ -11,7 +11,7 @@ import com.briup.apps.sms.dao.CollegeDao;
 import com.briup.apps.sms.service.CollegeService;
 
 /**
- * 逻辑逻辑处理的实现类
+ * 院逻辑处理的实现类
  * */
 @Service
 public class CollegeServiceImpl implements CollegeService {
@@ -29,10 +29,14 @@ public class CollegeServiceImpl implements CollegeService {
 	public void saveOrUpdate(College college) throws Exception {
 		if(college.getId()==null) {
 			collegeDao.insert(college);
-		} else {
+		} else 
 			collegeDao.update(college);
 		}
 		
+		@Override
+		public void deleteById(long id) throws Exception {
+			collegeDao.deleteById(id);
+		}
+
 	}
 
-}

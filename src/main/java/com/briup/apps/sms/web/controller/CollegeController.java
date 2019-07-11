@@ -17,10 +17,23 @@ public class CollegeController {
 	@Autowired
 	private CollegeService collegeService;
 
-	// http://localhost:8080/school/selectAll
+	// http://localhost:8080/college/selectAll
 	@GetMapping("selectAll")
 	public List<College> selectAll(){
 		return collegeService.selectAll();
 	}
+
+	// http://localhost:8080/college/deleteById?id=3
+		@GetMapping("deleteById")
+		public String deleteById(long id) {
+			try {
+				collegeService.deleteById(id);
+				return "删除成功";
+			} catch (Exception e) {
+				// 打印异常信息，返回异常信息
+				e.printStackTrace();
+				return e.getMessage();
+			}
+		}
 
 }
