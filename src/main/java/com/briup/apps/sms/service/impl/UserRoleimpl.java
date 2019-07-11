@@ -26,6 +26,11 @@ public class UserRoleimpl implements UserRoleService {
     	}
     }
 	@Override
+	public void deleteById(long id) throws Exception {
+		// TODO Auto-generated method stub
+		UserRoleDao.deleteById(id);
+	}
+	@Override
 	public void saveorUpdate(UserRole UserRole) throws Exception {
 		// TODO Auto-generated method stub
 		
