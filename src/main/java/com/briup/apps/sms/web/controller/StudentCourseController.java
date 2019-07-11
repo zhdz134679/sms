@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.briup.apps.sms.bean.Clazz;
+
 import com.briup.apps.sms.bean.StudentCourse;
 import com.briup.apps.sms.service.StudentCourseService;
 
