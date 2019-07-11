@@ -8,9 +8,9 @@ public interface UserDao {
 	
 	List<User> selectAll();  //查询所有
 	
-	void insert(User user1);//插入
+	void insert(User user);//插入
 	
-	void update(User user1); //更新
+	void update(User user); //更新
 	//
 	
 }
