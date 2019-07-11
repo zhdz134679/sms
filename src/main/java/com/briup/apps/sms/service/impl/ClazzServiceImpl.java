@@ -25,14 +25,5 @@ public class ClazzServiceImpl implements ClazzService {
 		return clazzDao.selectAll();
 	}
 
-	@Override
-	public void saveOrUpdate(Clazz clazz) throws Exception {
-		if(clazz.getId()==null) {
-			clazzDao.insert(clazz);
-		} else {
-			clazzDao.update(clazz);
-		}
-		
-	}
 
 }
