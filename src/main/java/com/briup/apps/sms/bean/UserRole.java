@@ -3,7 +3,7 @@ package com.briup.apps.sms.bean;
 public class UserRole {
 	private Long id;
 	private String user_id;
-	private String role_id;//
+	private String role_id;
 	public Long getId() {
 		return id;
 	}
