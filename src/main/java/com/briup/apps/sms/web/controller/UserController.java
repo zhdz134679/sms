@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -37,7 +38,17 @@ public class UserController {
 			return e.getMessage();
 		}
 	}
-	
+	@PostMapping("saveOrUpdate")
+	public String saveOrUpdate(User user) {
+		try {
+			userService.saveOrUpdate(user);
+			return "保存或更新成功";
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			return e.getMessage();
+		}
+	}
 	
 	
 }
