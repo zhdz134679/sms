@@ -32,6 +32,7 @@ public class ClazzController {
 	
 	
 	// http://localhost:8080/school/selectAll
+	
 	@GetMapping("selectAll")
 	public List<Clazz> selectAll(){
 		
