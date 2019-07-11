@@ -9,4 +9,5 @@ public interface ClazzService {
 	List<Clazz> selectAll();
 	
 	void saveOrUpdate(Clazz clazz) throws Exception;
+	
 }
