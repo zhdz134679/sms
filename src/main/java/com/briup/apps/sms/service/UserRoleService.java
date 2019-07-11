@@ -8,5 +8,6 @@ public interface UserRoleService {
 	List<UserRole> selectAll();
 	
 	void saveorUpdate(UserRole UserRole) throws Exception;
+	void deleteById(long id) throws Exception;
 
-}
+}//
