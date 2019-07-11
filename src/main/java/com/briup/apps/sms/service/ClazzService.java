@@ -10,4 +10,6 @@ public interface ClazzService {
 	
 	void saveOrUpdate(Clazz clazz) throws Exception;
 	
+	void deleteById(long id) throws Exception;
+
 }
