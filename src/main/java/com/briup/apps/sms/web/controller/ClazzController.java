@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.briup.apps.sms.bean.Clazz;
+import com.briup.apps.sms.bean.School;
 import com.briup.apps.sms.service.ClazzService;
 
 @RestController
@@ -17,17 +18,20 @@ import com.briup.apps.sms.service.ClazzService;
 public class ClazzController {
 	@Autowired
 	private ClazzService clazzService;
-	@PostMapping("savOrUpdate")
-	public String saverOrUpdate(Clazz clazz) {
+	@PostMapping("saveOrUpdate")
+	public String saveOrUpdate(Clazz clazz) {
 		try {
 			clazzService.saveOrUpdate(clazz);
-			return"保存或更新成功";
-		
-		}catch(Exception e) {
+			return "保存或更新成功";
+		} catch (Exception e) {
+			// TODO: handle exception
 			e.printStackTrace();
 			return e.getMessage();
 		}
 	}
+	
+	
+	// http://localhost:8080/school/selectAll
 
 	@GetMapping("selectAll")
 	public List<Clazz> selectAll(){
