@@ -11,6 +11,6 @@ public interface ClazzDao {
 	//插入
 	void update(Clazz clazz);
     //更新
-	void deletById(long id);
+	void deleteById(long id);
 	//通过ID删除
 }
