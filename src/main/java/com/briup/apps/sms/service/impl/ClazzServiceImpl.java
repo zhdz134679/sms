@@ -17,13 +17,26 @@ import com.briup.apps.sms.service.ClazzService;
 public class ClazzServiceImpl implements ClazzService {
 	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
 	@Resource
-	private ClazzDao clazzDao;
+	private ClazzDao ClazzDao;
 
 	@Override
 	public List<Clazz> selectAll() {
 		// TODO Auto-generated method stub
-		return clazzDao.selectAll();
+		return ClazzDao.selectAll();
 	}
 
+	@Override
+	public void saveOrUpdate(Clazz clazz) throws Exception {
+		if(clazz.getId()==null) {
+			ClazzDao.insert(clazz);
+		} else {
+			ClazzDao.update(clazz);
+		}
+		
+	}
+	@Override
+	public void deleteById(long id) throws Exception {
+		ClazzDao.deleteById(id);//
+	}
 
 }
