@@ -12,7 +12,7 @@
   </select>
   
   <insert id="insert">
-  insert into sms_user_role values(null,#{user_id},#{role_id})
+  insert into sms_user_role values(null,#{user_id},#{role_id})//
   </insert>
   <update id="update">
   update sms_user_role

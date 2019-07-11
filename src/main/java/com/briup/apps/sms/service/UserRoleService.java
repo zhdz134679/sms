@@ -10,4 +10,4 @@ public interface UserRoleService {
 	void saveorUpdate(UserRole UserRole) throws Exception;
 	void deleteById(long id) throws Exception;
 
-}
+}//
