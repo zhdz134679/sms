@@ -30,7 +30,7 @@ public class CollegeController {
 				collegeService.deleteById(id);
 				return "删除成功";
 			} catch (Exception e) {
-				// 打印异常信息，返回异常信息
+				// 打印异常信息，返回异常
 				e.printStackTrace();
 				return e.getMessage();
 			}

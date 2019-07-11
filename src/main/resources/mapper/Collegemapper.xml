@@ -23,6 +23,7 @@
   </update>
 
   <delete id="deleteById">
-  	delete from sms_school where id = #{id}
+  	delete from sms_school where id = #{id}   
   </delete>
-  </mapper>
+  </mapper>      
+  

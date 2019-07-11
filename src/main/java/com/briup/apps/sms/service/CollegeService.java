@@ -10,5 +10,5 @@ public interface CollegeService {
 	
 	void saveOrUpdate(College college) throws Exception;
 	
-	void deleteById(long id) throws Exception;
+	void deleteById(long id) throws Exception;//serv
 }

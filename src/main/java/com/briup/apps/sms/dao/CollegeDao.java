@@ -12,5 +12,5 @@ public interface CollegeDao {
 	void update(College college);
 //更新
 	void deleteById(long id);
-	//通过ID删除
+	//通过ID删
 }
