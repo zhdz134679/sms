@@ -11,7 +11,7 @@
     select * from sms_course
   </select>
 <insert id="insert">
-  	insert into sms_course values(null,#{name},#{credit},#{user_id});
+  	insert into sms_course values(null,#{name},#{credit},#{user_id})
   </insert>
 
   <update id="update">
