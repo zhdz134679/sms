@@ -9,4 +9,6 @@ public interface SchoolService {
 	List<School> selectAll();
 	
 	void saveOrUpdate(School school) throws Exception;
+	
+	void deleteById(long id) throws Exception;
 }

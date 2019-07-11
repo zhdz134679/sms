@@ -26,3 +26,4 @@
 	delete from sms_clazz where id =#{id}
 </delete>
 </mapper>
+

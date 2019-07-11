@@ -14,3 +14,4 @@ public interface ClazzDao {
 	void deleteById(long id);
 	//通过ID删除
 }
+//
