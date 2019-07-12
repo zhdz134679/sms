@@ -18,6 +18,7 @@ public class UserRoleimpl implements UserRoleService {
 		
 		return UserRoleDao.selectAll();
 	}
+	@Override
 	public void saveOrUpdate(UserRole UserRole) throws Exception{
     	if(UserRole.getId()==null) {
     		UserRoleDao.insert(UserRole);
@@ -30,9 +31,5 @@ public class UserRoleimpl implements UserRoleService {
 		// TODO Auto-generated method stub
 		UserRoleDao.deleteById(id);
 	}
-	@Override
-	public void saveorUpdate(UserRole UserRole) throws Exception {
-		// TODO Auto-generated method stub
-		
-	}//
+
 }

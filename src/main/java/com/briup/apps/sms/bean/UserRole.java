@@ -23,4 +23,4 @@ public class UserRole {
 		this.role_id = role_id;
 	}
 
-}//
+}
