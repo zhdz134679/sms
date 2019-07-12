@@ -17,10 +17,10 @@
   <update id="update">
   update sms_user_role
   set user_id=#{user_id},
-  role_id=#{role_id},
-   where id=#{id}
+  role_id=#{role_id}
+  where id=#{id}
   </update>
-  <delete id="deletById">
+  <delete id="deleteById">
   delete from sms_user_role where id=#{id}
   </delete>
 </mapper>

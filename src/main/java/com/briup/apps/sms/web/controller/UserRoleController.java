@@ -18,9 +18,9 @@ public class UserRoleController {
 	@Autowired
 	private UserRoleService UserRoleService;
 	@PostMapping("savOrUpdate")
-	public String saverOrUpdate(UserRole UserRole) {
+	public String saveOrUpdate(UserRole UserRole) {
 		try {
-			UserRoleService.saveorUpdate(UserRole);
+			UserRoleService.saveOrUpdate(UserRole);
 			return"保存或更新成功";
 		
 		}catch(Exception e) {
