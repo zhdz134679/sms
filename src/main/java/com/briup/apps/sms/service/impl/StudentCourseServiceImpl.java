@@ -36,6 +36,6 @@ public class StudentCourseServiceImpl implements StudentCourseService {
 	}
 	@Override
 	public void deleteById(long id) throws Exception {
-		StudentCourse.deleteById(id);
+		studentCourseDao.deleteById(id);
 	}
 }
